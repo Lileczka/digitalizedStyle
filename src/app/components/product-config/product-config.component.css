@@ -1,0 +1,54 @@
+.container {
+    width: 90%;
+    height:400px;
+    border: 3px solid black;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 20px;
+}
+
+.div-haut {
+    display: flex;
+}
+.button button {
+    width: 10px;
+    height: 10px;
+}
+
+.divCouleur .buttonRed {
+display: inline;
+background-color: aqua;
+
+
+margin:2px;
+cursor:pointer;
+
+}
+.divCouleur .buttonBleu {
+background-color: rgb(54, 12, 193);
+}
+
+.divCouleur .buttonvert {
+    background-color: rgb(16, 117, 37);
+}
+
+.divCouleur .buttonblack {
+    background-color: rgb(8, 9, 8);
+}
+.divCouleur .buttonviolet {
+    background-color: rgb(120, 6, 146);
+}
+
+.div-bas  {
+    display: flex;
+    justify-content: center;
+    margin: O auto;
+    margin-top: 10px;
+} 
+
+.div-bas button {
+    background-color: rgb(120, 6, 146);
+    color: white;
+
+}

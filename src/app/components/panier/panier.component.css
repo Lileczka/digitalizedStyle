@@ -1,0 +1,38 @@
+section {
+    display: flex;
+    gap: 100px;
+}
+
+.titre {
+    margin-left: 20px;
+    color: red;
+}
+
+img {
+    width: 20%;
+}
+
+.caracteristique {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.caracteristique ul li p {
+    font-family: 'Nunito', sans-serif;  
+}
+
+.livraison {
+    margin-top: 80px;
+}
+
+button {
+    font-size: 0.8em;
+    padding: 0.8em;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+

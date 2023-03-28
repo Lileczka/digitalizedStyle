@@ -1,0 +1,118 @@
+section {
+    margin-top: -175px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+img {
+    width: 460px;
+    margin-left: 5px;
+}
+
+.block-text {
+    display: block;
+    width: 80vh;
+    border: 2px solid black;
+    margin-left: 5px;
+    padding-top: 30px;
+   
+}
+
+.button {
+    
+    margin: 0 auto 80px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: url(../../../assets/hologram/hologram.jpg);
+    opacity: 0.9;
+    border-radius: 20px;
+}
+
+h2, p {
+margin-left: 20px;
+margin-right: 20px;
+margin-top: 10px;
+}
+
+.prix {
+    font-weight: bold;
+    margin-top: 150px;
+}
+
+
+
+@media all and (max-width: 900px) { 
+    .container { 
+            display: inline-block;
+            text-align: center;
+        }
+}
+
+@media screen and (max-width: 992px) {
+    section {
+         margin-top: -470px;
+    }
+
+    .container-empty {
+        height: 500px;
+        }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+         margin-top: -470px;
+    }
+
+    .container { 
+        display: inline-block;
+        }
+
+    div {
+        padding-left: 200px;
+    }
+
+    h2 {
+        padding-left: 250px;
+     }
+}
+    
+@media screen and (max-width: 570px) { 
+       
+    section {
+            margin-top: -470px;
+     }
+       
+    .container { 
+         display: inline-block;
+        text-align: center;
+    }
+        
+}
+    
+@media screen and (max-width: 500px) { 
+        
+    .container { 
+         display: inline-block;
+        text-align: center;
+    }
+       
+    div {
+        padding-left: 80px;
+    }
+       
+    h2 {
+        padding-left: 150px;
+    }  
+ }
+    
+    

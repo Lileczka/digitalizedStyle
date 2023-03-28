@@ -1,0 +1,114 @@
+/* VARIABLES */
+
+:root {
+    --purple: #7e2bbb;
+}
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titre {
+    color: var(--color-purple);
+    margin-left: 40px;
+    margin-bottom: -40px;
+}
+
+
+/* SECTION UNE */
+
+.section-un {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.panier {
+    flex: 66%;
+}
+
+.livraison {
+    flex: 33%;
+}
+
+/* SECTION DEUX */
+.section-deux {
+    display: flex;
+    width: 100%;
+    margin: 20px; 
+    gap: 20px;
+}
+
+form {
+    border: 2px solid var(--color-purple);
+    padding: 10px;
+    width: 31.5%;
+    line-height: 3em;
+}
+
+.inputs-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 50%;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 25px;
+    cursor: pointer;
+    width: 50%;
+}
+
+button:hover {
+    background-color: #7e2bbb;
+    color: white;
+
+}
+
+.offrir {
+    width: 66%;
+    border-radius: 10px;
+    align-self:flex-end;
+}
+
+
+@media  (max-width: 768px) {
+    .sectionUn {
+        flex-direction: column;
+    }
+    
+    .sectionDeux {
+        flex-direction: column;
+    }
+    
+    .panier {
+        flex: 100%;
+    }
+    
+    .livraison {
+        flex: 100%;
+    }
+    
+    .offrir {
+        flex: 100%;
+    }
+    
+    .moyenPaiement {
+        flex: 100%;
+    }
+}
+    

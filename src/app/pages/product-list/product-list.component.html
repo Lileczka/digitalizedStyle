@@ -1,0 +1,20 @@
+<!--DOUDOUNNES-->
+<section>
+<h2>{{titreToDisplay}}</h2>
+  <app-barre-violette></app-barre-violette>
+  <mat-dialog-actions>
+  <button mat-raised-button class="btnmodal" (click)="openDialog()">{{ btnText }}</button>
+  <button mat-raised-button class="btnmodal btnmodal2" (click)="openDialog()">{{ btnText }}</button>
+  <button mat-raised-button class="btnmodal btnmodal3" (click)="openDialog()">{{ btnText }}</button>
+</mat-dialog-actions>
+  <div class="container">
+  <app-one-product-card 
+      *ngFor="let item_productdetails of item_productdetails"
+      [Item_productdetails]="item_productdetails" 
+    >
+  </app-one-product-card>
+  </div>
+  <app-barre-violette></app-barre-violette>
+  <div class="container-empty">
+  </div>
+  </section>

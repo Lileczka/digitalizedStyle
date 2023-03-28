@@ -1,0 +1,106 @@
+section {
+    margin-top: -175px;
+}
+
+mat-dialog-actions {
+    width: 95%;
+    display: flex;
+    justify-content:space-around;
+    margin: 10px 0 10px;
+}
+
+.container {
+    grid-template-columns: repeat( 3, 1fr);
+    gap: 80px;
+    display: grid;
+    place-items: center;
+}
+
+h2 {
+    font-size: 32px;
+    margin-left: 30px;
+ }
+
+.container-empty {
+    height: 400px;
+}
+
+.btnmodal {
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid rgb(114, 113, 113);
+    margin-left: 70px;
+    
+}
+
+.btnmodal2 ,.btnmodal3 {
+    margin-left: 250px;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    section {
+        margin-top: -350px;
+    }
+    .container-empty {
+        margin-top: 250px;
+    }
+}
+@media screen and (max-width: 768px) {
+    section {
+        margin-top: -470px;
+    }
+    .container { 
+        display: inline-block;
+        text-align: center;
+        margin-left: 100px;
+    }
+    h2 {
+        padding-left: 180px;
+    }
+    div {
+        margin-left: 50px;
+    }
+    .container-empty {
+        margin-top: 200px;
+    }
+}
+@media screen and (max-width: 570px) { 
+    section {
+        margin-top: -470px;
+    }
+    .container { 
+        display: inline-block;
+        text-align: center;
+        margin-left: 90px;
+    }
+    .container-empty {
+        margin-top: 100px;
+    }
+    h2 {
+        padding-left: 200px;
+    }
+    .container-empty {
+        margin-top: 150px;
+    }
+   }
+@media all and (max-width: 500px) { 
+    section {
+        margin-top: -470px;
+    }
+    .container { 
+        display: inline-block;
+        text-align: center;
+    }
+    h2 {
+        padding-left: 130px;
+   }
+   .container-empty {
+    margin-top: 100px;
+}
+}

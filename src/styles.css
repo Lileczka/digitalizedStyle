@@ -1,1 +1,158 @@
+
 /* You can add global styles to this file, and also import other style files */
+/** GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Orbitron', sans-serif;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* LOADER */
+.loader {
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    /*Pour fixer la position*/
+    z-index: 2;
+    background-color: #f2f2f2;
+    /*En rgbA pour l'opacité*/
+    opacity: 0.9;
+    animation: 1s linear 2s 1 normal both running stopLoader;
+  }
+  .loader:after {
+    content: "";
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    border: 15px solid #7e2bbb;
+    width: 100px;
+    height: 100px;
+    border-top-color: #FF79DA;
+    border-bottom-color: #99e2d0;
+    border-radius: 50%;
+    animation: 5s linear 0s infinite reverse both running infiniteRotate;
+    display: block;
+  }
+  @keyframes infiniteRotate {
+    0% {
+      transform: rotate(0deg) scale(1);
+      border-top-color: #7e2bbb;
+      border-bottom-color: #FF79DA;
+    }
+    25% {
+      border-top-color: #FF79DA;
+      border-bottom-color: #7e2bbb;
+    }
+    50% {
+      transform: rotate(360deg) scale(1.13);
+      border-top-color: #7e2bbb;
+      border-bottom-color: #FF79DA;
+    }
+    75% {
+      border-top-color: #FF79DA;
+      border-bottom-color: #7e2bbb;
+    }
+    100% {
+      transform: rotate(720deg) scale(1);
+      border-top-color: #7e2bbb;
+      border-bottom-color: #FF79DA;
+    }
+  }
+  @keyframes stopLoader {
+    100% {
+      opacity: 0;
+      overflow: hidden;
+      z-index: -1000;
+    }
+  }
+
+  .nomDz {
+    color: #7e2bbb;
+    font-size: 2rem;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+  }
+
+
+
+img {
+    width: min(100%, 100%);
+    display: block;
+}
+
+body {
+    background: #fff;
+}
+
+header,
+section,
+footer {
+    width: min(100%, 100%);
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    font-weight: 400;
+    margin-bottom: 46px;
+}
+
+ul li {
+    line-height: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    padding: 30px 80px;
+    border: 7px solid white;
+    border-radius: 15px;
+    font-size: 2rem;
+}
+
+.polygons {
+    width: 10px;
+}
+
+/*? PROPRIETES BOX*/
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-straight {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+/*? MISE EN PLACE DES VARIABLES */
+:root {
+    --color-black: black;
+    --color-darkGray: #7a7070;
+    --color-white: #fff;
+    --color-grey: #f5f5f5;
+    --color-purple: #7e2bbb;
+}
+
+/* html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

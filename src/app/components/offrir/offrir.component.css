@@ -1,0 +1,10 @@
+.offrir {
+    border: 2px solid var(--color-purple);
+    padding: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
